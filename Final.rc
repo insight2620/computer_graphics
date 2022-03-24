@@ -1,0 +1,864 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Final.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Final.ico"
+IDR_FINALTYPE           ICON    DISCARDABLE     "res\\FinalDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "基本图形绘制"
+    BEGIN
+        MENUITEM "四种方法画直线",              ID_Line
+        MENUITEM "Bresenham绘制圆",             ID_BresenhamCircle
+        MENUITEM "Bresenham绘制椭圆",           ID_BresenhamEllipse
+        MENUITEM "矩形的绘制",                  ID_Rectangle
+        MENUITEM "多边形的绘制",                ID_Polygon
+        MENUITEM "圆弧的绘制",                  ID_Arc
+    END
+    POPUP "基本图形变换"
+    BEGIN
+        MENUITEM "平移变换",                    ID_Translation
+        MENUITEM "比例变换",                    ID_Ratio
+        MENUITEM "错切变换",                    ID_Shear
+        MENUITEM "对称变换",                    ID_Sym
+        MENUITEM "旋转变换",                    ID_Rotate
+        POPUP "复合变换"
+        BEGIN
+            MENUITEM "复合平移变换",                ID_CompTrans
+            MENUITEM "复合比例变换",                ID_CompRatio
+            MENUITEM "复合旋转变换",                ID_CompRotate
+        END
+        POPUP "相对任意参考点的变换"
+        BEGIN
+            MENUITEM "对称",                        ID_Symx
+            MENUITEM "旋转",                        ID_Rotatex
+        END
+        MENUITEM "相对任意直线对称",            ID_Symxx
+    END
+    POPUP "自由曲线绘制"
+    BEGIN
+        POPUP "Bezier曲线"
+        BEGIN
+            MENUITEM "1次Bezier曲线",               ID_Bezier1
+            MENUITEM "2次Bezier曲线",               ID_Bezier2
+            MENUITEM "3次Bezier曲线",               ID_Bezier3
+        END
+        MENUITEM "3次B样条曲线",                ID_Bspl
+        MENUITEM "Hermite三次样条曲线",         ID_Hermite
+        MENUITEM "曲线的拼接",                  ID_Curvesplicing
+    END
+    POPUP "图形裁剪和图形填充"
+    BEGIN
+        MENUITEM "多边形裁剪",                  ID_CAIJIAN
+        MENUITEM "绘制填充多边形",              ID_MENUITEM32803
+        MENUITEM "有效边表填充算法",            ID_MENUITEM32802
+    END
+    MENUITEM "清屏",                        ID_Refresh
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Final"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "Final 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2020",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DIALOGLine DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直线/矩形左下和右上"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,24,67,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,66,50,14
+    LTEXT           "x0:",IDC_STATIC,27,20,14,8
+    EDITTEXT        IDC_x0,45,16,26,14,ES_AUTOHSCROLL
+    LTEXT           "y0:",IDC_STATIC,27,46,14,8
+    EDITTEXT        IDC_y0,45,42,26,14,ES_AUTOHSCROLL
+    LTEXT           "x1:",IDC_STATIC,101,20,14,8
+    EDITTEXT        IDC_x1,119,16,26,14,ES_AUTOHSCROLL
+    LTEXT           "y1:",IDC_STATIC,101,46,14,8
+    EDITTEXT        IDC_y1,119,42,26,14,ES_AUTOHSCROLL
+END
+
+IDD_DialogCircle DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "圆"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,75,50,14
+    LTEXT           "圆心坐标:",IDC_STATIC,19,14,37,8
+    LTEXT           "x:",IDC_STATIC,30,36,8,9
+    EDITTEXT        IDC_x,42,34,27,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,30,54,8,9
+    EDITTEXT        IDC_y,42,52,27,12,ES_AUTOHSCROLL
+    LTEXT           "半径长度:",IDC_STATIC,96,14,37,8
+    LTEXT           " R:",IDC_STATIC,114,45,10,14
+    EDITTEXT        IDC_r,129,43,27,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGEllipse DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "椭圆"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,75,50,14
+    LTEXT           "圆心坐标:",IDC_STATIC,19,14,37,8
+    LTEXT           "x:",IDC_STATIC,30,36,8,9
+    EDITTEXT        IDC_x,42,34,27,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,30,54,8,9
+    EDITTEXT        IDC_y,42,52,27,12,ES_AUTOHSCROLL
+    LTEXT           "长短半轴长度:",IDC_STATIC,96,14,53,8
+    LTEXT           "a:",IDC_STATIC,114,36,10,14
+    EDITTEXT        IDC_a,129,34,27,12,ES_AUTOHSCROLL
+    LTEXT           "b:",IDC_STATIC,114,54,10,14
+    EDITTEXT        IDC_b,129,52,27,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGRect DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "矩形"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,21,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,97,75,50,14
+    LTEXT           "矩形左下角坐标:",IDC_STATIC,19,14,66,8
+    LTEXT           "x:",IDC_STATIC,30,36,8,9
+    EDITTEXT        IDC_x,42,34,27,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,30,54,8,9
+    EDITTEXT        IDC_y,42,52,27,12,ES_AUTOHSCROLL
+    LTEXT           "长和宽的长度:",IDC_STATIC,96,14,57,8
+    LTEXT           "长:",IDC_STATIC,114,36,10,14
+    EDITTEXT        IDC_a,129,34,27,12,ES_AUTOHSCROLL
+    LTEXT           "宽:",IDC_STATIC,114,54,10,14
+    EDITTEXT        IDC_b,129,52,27,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGPoly DIALOG DISCARDABLE  0, 0, 187, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "多边形"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,98,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,98,50,14
+    LTEXT           "请输入多边形每个顶点的坐标:",IDC_STATIC,27,17,128,12
+    EDITTEXT        IDC_EDIT1,27,65,134,18,ES_AUTOHSCROLL
+    LTEXT           "（顶点个数任意，坐标之间用空格分开，例如：0,0 2,2 4,1）",
+                    IDC_STATIC,26,35,125,24
+END
+
+IDD_DIALOGArc DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "圆弧"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,20,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,75,50,14
+    LTEXT           "x0:",IDC_STATIC,12,36,11,8
+    EDITTEXT        IDC_x0,23,34,19,12,ES_AUTOHSCROLL
+    LTEXT           "限定矩形左上角和右下角坐标:",IDC_STATIC,13,13,87,18
+    LTEXT           "y0:",IDC_STATIC,12,54,11,8
+    EDITTEXT        IDC_y0,23,52,19,12,ES_AUTOHSCROLL
+    LTEXT           "x1:",IDC_STATIC,48,36,11,8
+    EDITTEXT        IDC_x1,59,34,19,12,ES_AUTOHSCROLL
+    LTEXT           "y1:",IDC_STATIC,48,54,11,8
+    EDITTEXT        IDC_y1,59,52,19,12,ES_AUTOHSCROLL
+    LTEXT           "x2:",IDC_STATIC,101,36,11,8
+    EDITTEXT        IDC_x2,112,34,19,12,ES_AUTOHSCROLL
+    LTEXT           "y2:",IDC_STATIC,101,54,11,8
+    EDITTEXT        IDC_y2,112,52,19,12,ES_AUTOHSCROLL
+    LTEXT           "x3:",IDC_STATIC,138,36,11,8
+    EDITTEXT        IDC_x3,149,34,19,12,ES_AUTOHSCROLL
+    LTEXT           "y3:",IDC_STATIC,138,54,11,8
+    EDITTEXT        IDC_y3,149,52,19,12,ES_AUTOHSCROLL
+    LTEXT           "圆弧起点和终点:",IDC_STATIC,104,13,42,17
+END
+
+IDD_DIALOGLineS DIALOG DISCARDABLE  0, 0, 229, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择绘制直线方式"
+FONT 12, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,23,101,50,14
+    PUSHBUTTON      "取消",IDCANCEL,99,101,50,14
+    CONTROL         "Bresenham",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,20,26,
+                    54,18
+    CONTROL         "改进的Bresenham",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,
+                    130,28,74,16
+    CONTROL         "DDA",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,86,29,42,15
+    CONTROL         "系统库函数（可设置线宽和线型）",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,25,55,139,25
+END
+
+IDD_DIALOGPen DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直线线宽和线形设计"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,75,50,14
+    LTEXT           "线宽:",IDC_STATIC,22,30,20,9
+    EDITTEXT        IDC_wid,44,27,32,13,ES_AUTOHSCROLL
+    CONTROL         "直线",IDC_RADIOz,"Button",BS_AUTORADIOBUTTON,47,55,26,9
+    CONTROL         "虚线",IDC_RADIOx,"Button",BS_AUTORADIOBUTTON,94,54,31,
+                    12
+    LTEXT           "线形:",IDC_STATIC,24,56,20,9
+    LTEXT           "颜色:",IDC_STATIC,87,30,20,9
+    EDITTEXT        IDC_wid2,109,27,31,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGTri DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "三角形"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,24,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,102,75,50,14
+    LTEXT           "x0:",IDC_STATIC,16,29,12,10
+    EDITTEXT        IDC_x0,31,27,23,12,ES_AUTOHSCROLL
+    LTEXT           "y0:",IDC_STATIC,16,54,12,10
+    EDITTEXT        IDC_y0,31,52,23,12,ES_AUTOHSCROLL
+    LTEXT           "x1:",IDC_STATIC,76,29,12,10
+    EDITTEXT        IDC_x1,91,27,23,12,ES_AUTOHSCROLL
+    LTEXT           "y1:",IDC_STATIC,76,54,12,10
+    EDITTEXT        IDC_y1,91,52,23,12,ES_AUTOHSCROLL
+    LTEXT           "x2:",IDC_STATIC,133,29,12,10
+    EDITTEXT        IDC_x2,148,27,23,12,ES_AUTOHSCROLL
+    LTEXT           "y2:",IDC_STATIC,133,54,12,10
+    EDITTEXT        IDC_y2,148,52,23,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGTrans DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "平移"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,107,75,50,14
+    LTEXT           "请输入平移距离:",IDC_STATIC,20,15,62,10
+    LTEXT           "x方向:",IDC_STATIC,55,31,24,9
+    EDITTEXT        IDC_dx,83,30,27,11,ES_AUTOHSCROLL
+    LTEXT           "y方向:",IDC_STATIC,55,52,24,9
+    EDITTEXT        IDC_dy,83,51,27,11,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGSym DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对称"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,75,50,14
+    CONTROL         "关于X轴对称",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,16,
+                    22,58,11
+    CONTROL         "关于Y轴对称",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,16,
+                    38,59,11
+    CONTROL         "关于原点对称",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,16,
+                    52,58,11
+    CONTROL         "关于直线 y = x 对称",IDC_RADIO4,"Button",
+                    BS_AUTORADIOBUTTON,84,30,79,11
+    CONTROL         "关于直线 y = -x 对称",IDC_RADIO5,"Button",
+                    BS_AUTORADIOBUTTON,80,53,79,11
+END
+
+IDD_DIALOGRatio DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "比例"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,75,50,14
+    LTEXT           "输入要变换的比例:",IDC_STATIC,21,18,69,11
+    LTEXT           "X方向:",IDC_STATIC,71,37,24,8
+    EDITTEXT        IDC_dx,101,36,25,10,ES_AUTOHSCROLL
+    LTEXT           "Y方向:",IDC_STATIC,71,58,24,8
+    EDITTEXT        IDC_dy,101,57,25,10,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGShare DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "错切"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,31,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,75,50,14
+    LTEXT           "请输入错切系数:",IDC_STATIC,21,18,61,10
+    LTEXT           "X方向:",IDC_STATIC,77,34,23,11
+    EDITTEXT        IDC_c,105,33,31,13,ES_AUTOHSCROLL
+    LTEXT           "Y方向:",IDC_STATIC,77,54,23,11
+    EDITTEXT        IDC_b,105,53,31,13,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGRotate DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "旋转"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,75,50,14
+    LTEXT           "请输入绕哪一点旋转:",IDC_STATIC,31,14,76,10
+    LTEXT           "x:",IDC_STATIC,39,33,10,9
+    EDITTEXT        IDC_x,53,32,23,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,88,32,10,9
+    EDITTEXT        IDC_y,98,32,23,12,ES_AUTOHSCROLL
+    LTEXT           "请输入旋转的角度:",IDC_STATIC,31,52,67,10
+    EDITTEXT        IDC_angle,104,51,31,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGSymx DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "相对点对称"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,25,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,104,75,50,14
+    LTEXT           "请输入相对哪一点对称:",IDC_STATIC,30,20,85,10
+    LTEXT           "x:",IDC_STATIC,29,43,10,9
+    EDITTEXT        IDC_x,40,39,23,12,ES_AUTOHSCROLL
+    LTEXT           "y:",IDC_STATIC,90,43,10,9
+    EDITTEXT        IDC_y,103,40,23,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGBezier3 DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输入控制点"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,28,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,75,50,14
+    LTEXT           "x0:",IDC_STATIC,9,27,14,9
+    EDITTEXT        IDC_x000,23,26,27,12,ES_AUTOHSCROLL
+    LTEXT           "x1:",IDC_STATIC,52,27,14,9
+    EDITTEXT        IDC_x111,66,26,27,12,ES_AUTOHSCROLL
+    LTEXT           "x2:",IDC_STATIC,94,27,14,9
+    EDITTEXT        IDC_x222,108,26,27,12,ES_AUTOHSCROLL
+    LTEXT           "x3:",IDC_STATIC,136,28,12,8
+    EDITTEXT        IDC_x333,150,26,27,12,ES_AUTOHSCROLL
+    LTEXT           "y0:",IDC_y01,9,53,14,9
+    EDITTEXT        IDC_y000,23,51,27,12,ES_AUTOHSCROLL
+    LTEXT           "y1:",IDC_y4,53,53,14,9
+    EDITTEXT        IDC_y111,67,51,27,12,ES_AUTOHSCROLL
+    LTEXT           "y2:",IDC_y5,95,52,12,8
+    EDITTEXT        IDC_y222,108,50,27,12,ES_AUTOHSCROLL
+    LTEXT           "y3:",IDC_y6,136,50,11,8
+    EDITTEXT        IDC_y333,150,48,27,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOGSymxx DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "相对直线对称"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,101,75,50,14
+    LTEXT           "输入直线方程Ax+By+C=0的参数:",IDC_STATIC,27,22,115,11
+    EDITTEXT        IDC_a,40,46,21,10,ES_AUTOHSCROLL
+    LTEXT           "A:",IDC_STATIC,28,47,9,9
+    EDITTEXT        IDC_b,84,46,21,10,ES_AUTOHSCROLL
+    LTEXT           "B:",IDC_STATIC,75,47,9,9
+    EDITTEXT        IDC_c,131,45,21,10,ES_AUTOHSCROLL
+    LTEXT           "C:",IDC_STATIC,121,46,9,9
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,75,50,14
+    PUSHBUTTON      "取消",IDCANCEL,100,75,50,14
+    LTEXT           "输入填充的颜色:",IDC_STATIC,29,37,61,9
+    EDITTEXT        IDC_Color,92,34,60,13,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Final Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Final\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2020\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Final.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Final 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DIALOGLine, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DialogCircle, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGEllipse, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGRect, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGPoly, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_DIALOGArc, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGLineS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 222
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_DIALOGPen, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGTri, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGTrans, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGSym, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGRatio, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGShare, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGRotate, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGSymx, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGBezier3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOGSymxx, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Final\n\nFinal\n\n\nFinal.Document\nFinal Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Final"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Final.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

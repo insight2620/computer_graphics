@@ -1,0 +1,116 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Final - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Final.res" /d "_DEBUG" /d "_AFXDLL" "E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\Final.rc"" 
+Creating temporary file "C:\Users\25\AppData\Local\Temp\RSPAB85.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Final.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\AET.CPP"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\Bucket.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogArc.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogBezier3.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogCircle.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogColor.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogEllipse.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogLine.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogLineS.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogPen.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogPoly.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogRatio1.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogRect.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogRotate.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogShare.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogSym.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogSymx.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogSymxx.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogTrans.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\DialogTri.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\Final.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\FinalDoc.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\FinalView.cpp"
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\Users\25\AppData\Local\Temp\RSPAB85.tmp" 
+Creating temporary file "C:\Users\25\AppData\Local\Temp\RSPAB86.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Final.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\课程设计和实验\计算机图形学\最终大实验\新建文件夹\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\25\AppData\Local\Temp\RSPAB86.tmp" 
+Creating temporary file "C:\Users\25\AppData\Local\Temp\RSPAB87.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Final.pdb" /debug /machine:I386 /out:"Debug/Final.exe" /pdbtype:sept 
+".\Debug\AET.OBJ"
+".\Debug\Bucket.obj"
+".\Debug\DialogArc.obj"
+".\Debug\DialogBezier3.obj"
+".\Debug\DialogCircle.obj"
+".\Debug\DialogColor.obj"
+".\Debug\DialogEllipse.obj"
+".\Debug\DialogLine.obj"
+".\Debug\DialogLineS.obj"
+".\Debug\DialogPen.obj"
+".\Debug\DialogPoly.obj"
+".\Debug\DialogRatio1.obj"
+".\Debug\DialogRect.obj"
+".\Debug\DialogRotate.obj"
+".\Debug\DialogShare.obj"
+".\Debug\DialogSym.obj"
+".\Debug\DialogSymx.obj"
+".\Debug\DialogSymxx.obj"
+".\Debug\DialogTrans.obj"
+".\Debug\DialogTri.obj"
+".\Debug\Final.obj"
+".\Debug\FinalDoc.obj"
+".\Debug\FinalView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Final.res"
+]
+Creating command line "link.exe @C:\Users\25\AppData\Local\Temp\RSPAB87.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AET.CPP
+Bucket.cpp
+DialogArc.cpp
+DialogBezier3.cpp
+DialogCircle.cpp
+DialogColor.cpp
+DialogEllipse.cpp
+DialogLine.cpp
+DialogLineS.cpp
+DialogPen.cpp
+DialogPoly.cpp
+DialogRatio1.cpp
+DialogRect.cpp
+DialogRotate.cpp
+DialogShare.cpp
+DialogSym.cpp
+DialogSymx.cpp
+DialogSymxx.cpp
+DialogTrans.cpp
+DialogTri.cpp
+Generating Code...
+Compiling...
+Final.cpp
+FinalDoc.cpp
+FinalView.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Final.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
